@@ -15,13 +15,13 @@ passport.use('local.signin', new LocalStrategy({
         const user = rows[0];
         const validPassword = await helpers.matchPassword(password, user.password);
         if(validPassword){
-            done(null, user, req.flash('Welcome ' + user.username));
+            done(null, user, req.flash('success','Welcome ' + user.username));
             
         } else {
-            done(null, false, req.flash('Incorrect password'));
+            done(null, false, req.flash('errors','Incorrect password'));
             }
         } else {
-            return done (null, false, req.flash('This username does not exist'))            
+            return done (null, false, req.flash('errors','This username does not exist'))            
         }  } catch(err){
             console.log(err);
             res.send('Carajo3')
