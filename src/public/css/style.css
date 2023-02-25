@@ -1,0 +1,22 @@
+body{
+    background: rgb(231, 132, 2);
+    font-family: 'Oswald', sans-serif;
+    overflow: hidden;
+}
+
+.index{
+    width: 100%;
+    height: 100%;
+}
+
+.header{  
+    color: rebeccapurple;
+    min-height: 30rem;
+    width: 100%;
+    height: 100%;
+    padding: 8rem;
+    background: url('/img/wallpaperbetter.jpg');
+    background: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
